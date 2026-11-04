@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 5</title>
+        <style>
+
+            .soundscape {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px;
+            }
+
+            .soundscape audio {
+                width: 75%;
+            }
+
+            .videoscape {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .videoarea {
+                position: relative;
+                width: 75%;
+            }
+
+            #adpopup {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Soundscape and Video of my home country: Pakistan</h1>
+        <div class="soundscape">
+            <audio id="pakaudio" controls>
+                <source src="resources/786368__fatima1__islamabad-soundscapes2.wav" type="audio/wav">
+            </audio>
+            <button id="x05">0.5x</button>
+            <button id="normal">1x</button>
+            <button id="x2">2x</button>
+            <button id="replay">Replay</button>
+        </div>
+        <div class="videoscape">
+            <div class="videoarea">
+                <video id="pakistan" controls>
+                    <source src="resources/11989211_1280_720_30fps.mp4" type="video/mp4">
+                </video>
+                <div id="adpopup">
+                    <h2>Fly Emirates<br>Buy tickets now #AD</h2>
+                </div>
+            </div>
+            <button id="videoplay">Play</button>
+            <button id="videopause">Pause</button>
+        </div>
+        <script src="resources/script.js"></script>
+    </body>
+</html>
